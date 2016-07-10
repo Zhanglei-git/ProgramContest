@@ -28,4 +28,9 @@ public class TestFizzBuzz {
     public void return_FizzBuzz_when_inputNumber_is_15() throws Exception {
         assertEquals("FizzBuzz",fb.work(15));
     }
+
+    @Test
+    public void return_invalidate_number_when_input_is_a_Float() throws Exception {
+        assertEquals("invalidate number!",fb.work(3.5));
+    }
 }
