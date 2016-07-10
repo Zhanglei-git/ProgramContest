@@ -24,3 +24,9 @@ describe('testInvalidInputData', function () {
         assert.equal('Invalid Input Data', fizzBuzz(4.5));
     });
 });
+
+describe('testInvalidInputData', function () {
+    it('return Invalid Input Data when input num is undefined', function () {
+        assert.equal('Invalid Input Data', fizzBuzz());
+    });
+});
