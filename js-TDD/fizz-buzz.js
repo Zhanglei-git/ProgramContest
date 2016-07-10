@@ -1,4 +1,7 @@
 function fizzBuzz(num) {
+    if(parseInt(num)!= num){
+        return "Invalid Input Data"
+    }
     if (num % 15 === 0) {
         return "FIZZBUZZ";
     } else {

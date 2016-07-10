@@ -18,3 +18,9 @@ describe('testFizzBuzz', function () {
         assert.equal('FIZZBUZZ', fizzBuzz(15));
     });
 });
+
+describe('testInvalidInputData', function () {
+    it('return Invalid Input Data when input num is 4.5', function () {
+        assert.equal('Invalid Input Data', fizzBuzz(4.5));
+    });
+});
