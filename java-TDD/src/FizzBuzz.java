@@ -3,6 +3,9 @@
  */
 public class FizzBuzz {
     public String work(Integer inputNumber){
+        if(inputNumber%3==0){
+            return "Fizz";
+        }
         return "";
     }
 }
