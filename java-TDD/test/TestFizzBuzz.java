@@ -18,4 +18,14 @@ public class TestFizzBuzz {
     public void return_Fizz_when_inputNumber_is_3() throws Exception {
         assertEquals("Fizz",fb.work(3));
     }
+
+    @Test
+    public void return_Buzz_when_inputNumber_is_5() throws Exception {
+        assertEquals("Buzz",fb.work(5));
+    }
+
+    @Test
+    public void return_FizzBuzz_when_inputNumber_is_15() throws Exception {
+        assertEquals("FizzBuzz",fb.work(15));
+    }
 }
