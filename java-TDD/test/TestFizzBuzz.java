@@ -33,4 +33,9 @@ public class TestFizzBuzz {
     public void return_invalidate_number_when_input_is_a_Float() throws Exception {
         assertEquals("invalidate number!",fb.work(3.5));
     }
+
+    @Test
+    public void return_invalidate_number_when_input_is_null() throws Exception {
+        assertEquals("invalidate number!",fb.work(null));
+    }
 }
