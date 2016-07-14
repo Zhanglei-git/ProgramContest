@@ -18,4 +18,9 @@ public class TestFizzBuzz {
     public void return_Fizz_when_inputNumber_is_3() throws Exception{
           assertEquals("FIZZ", fb.work(3));
     }
+
+    @Test
+    public void return_Buzz_when_inputNumber_is_5() throws Exception{
+        assertEquals("BUZZ", fb.work(5));
+    }
 }
