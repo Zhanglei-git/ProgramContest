@@ -28,4 +28,14 @@ public class TestFizzBuzz {
     public void return_FizzBuzz_when_inputNumber_is_15() throws Exception {
         assertEquals("FIZZBUZZ", fb.work(15));
     }
+
+    @Test
+    public void return_Invalid_Input_Data_when_inputNumber_is_4_dot_5() throws Exception {
+        assertEquals("Invalid Input Data", fb.work(4.5));
+    }
+
+    @Test
+    public void return_Invalid_Input_Data_when_inputNumber_null() throws Exception {
+        assertEquals("Invalid Input Data", fb.work(null));
+    }
 }
