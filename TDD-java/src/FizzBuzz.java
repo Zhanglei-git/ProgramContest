@@ -5,12 +5,16 @@ public class FizzBuzz {
     public String work(Object input) {
         int inputNum = (Integer) input;
 
-        if (inputNum % 3 == 0) {
-            return "FIZZ";
+        if (inputNum % 15 == 0) {
+            return "FIZZBUZZ";
+        } else {
+            if (inputNum % 3 == 0) {
+                return "FIZZ";
+            }
+            if (inputNum % 5 == 0) {
+                return "BUZZ";
+            }
+            return "";
         }
-        if (inputNum % 5 == 0) {
-            return "BUZZ";
-        }
-        return "";
     }
 }
